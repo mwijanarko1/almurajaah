@@ -12,7 +12,7 @@ export default function AboutContent() {
             At the heart of our journey lies a profound inspiration from the words of the Prophet Muhammad (ﷺ):
           </p>
           <blockquote className="border-l-4 border-emerald-500 pl-4 py-2 my-4 bg-emerald-50 italic">
-            "The example of a man who has memorised the Qur'an is like that of a hobbled camel. If he remained vigilant, he would be able to retain it (with him), and if he loosened the hobbled camel it would escape."
+            &ldquo;The example of a man who has memorised the Qur&apos;an is like that of a hobbled camel. If he remained vigilant, he would be able to retain it (with him), and if he loosened the hobbled camel it would escape.&rdquo;
             <footer className="text-sm mt-2 text-emerald-700">
               (Sahih Muslim)
             </footer>
@@ -39,7 +39,7 @@ export default function AboutContent() {
         <div className="space-y-4">
           <h3 className="text-2xl font-semibold">Why We Exist</h3>
           <p className="leading-relaxed">
-            In an age of distractions, we understand the challenges of staying consistent in Quran memorization and revision. Many memorizers struggle with losing what they've worked so hard to retain, simply because they lack a structured system to keep up with their revisions.
+            In an age of distractions, we understand the challenges of staying consistent in Quran memorization and revision. Many memorizers struggle with losing what they&apos;ve worked so hard to retain, simply because they lack a structured system to keep up with their revisions.
           </p>
           <p className="leading-relaxed">
             This is where our platform comes in. By integrating modern technology with a timeless message, we aim to help you safeguard your Quranic memorization, ensuring it becomes a source of guidance, light, and blessing in your life.
@@ -50,7 +50,7 @@ export default function AboutContent() {
         <div className="space-y-4">
           <h3 className="text-2xl font-semibold">Our Vision</h3>
           <p className="leading-relaxed">
-            We envision a global community of Quran memorizers who not only retain the Quran in their hearts but also embody its teachings in their lives. Through consistent revision and deep connection, we aspire to help every user fulfill the responsibility and honor of carrying Allah's words.
+            We envision a global community of Quran memorizers who not only retain the Quran in their hearts but also embody its teachings in their lives. Through consistent revision and deep connection, we aspire to help every user fulfill the responsibility and honor of carrying Allah&apos;s words.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export default function AboutContent() {
         <div className="space-y-4">
           <h3 className="text-2xl font-semibold">Join Us on This Journey</h3>
           <p className="leading-relaxed">
-            Whether you are just beginning your memorization or looking to strengthen what you've already learned, our app is designed to meet you where you are. Together, let's keep the Quran alive in our hearts—one revision at a time.
+            Whether you are just beginning your memorization or looking to strengthen what you&apos;ve already learned, our app is designed to meet you where you are. Together, let&apos;s keep the Quran alive in our hearts—one revision at a time.
           </p>
         </div>
       </div>

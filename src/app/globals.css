@@ -1,77 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+:root {
+  --color-primary: #2ECC71;
+  --color-secondary: #27AE60;
+  --color-background: #FFFFFF;
+  --color-surface: #F8F9FA;
+  --color-text: #1A1A1A;
+  --color-text-secondary: #666666;
+  --color-accent: #2ECC71;
+}
 
-/* Islamic Patterns */
+.dark {
+  --color-primary: #2ECC71;
+  --color-secondary: #27AE60;
+  --color-background: #0A2E1F;
+  --color-surface: #0F3528;
+  --color-text: #FFFFFF;
+  --color-text-secondary: #A0AEC0;
+  --color-accent: #2ECC71;
+}
+
+.font-arabic {
+  font-family: 'Amiri', serif;
+}
+
 .pattern-islamic {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f9f4' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-/* Theme Variables */
-@layer base {
-  :root {
-    /* Light theme variables */
-    --color-primary: #2ECC71;
-    --color-secondary: #27AE60;
-    --color-background: #FFFFFF;
-    --color-surface: #F8F9FA;
-    --color-text: #1A1A1A;
-    --color-text-secondary: #666666;
-    --color-accent: #2ECC71;
-  }
-
-  .dark {
-    /* Dark theme variables */
-    --color-primary: #2ECC71;
-    --color-secondary: #27AE60;
-    --color-background: #0A2E1F;
-    --color-surface: #0F3528;
-    --color-text: #FFFFFF;
-    --color-text-secondary: #A0AEC0;
-    --color-accent: #2ECC71;
-  }
-
-  /* Islamic theme can be added later if needed */
-}
-
-/* Base styles */
-body {
-  background-color: var(--color-background);
-  color: var(--color-text);
-}
-
-/* Transition for theme changes */
-* {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Arabic Font Class */
-.font-arabic {
-  font-family: 'Amiri', serif;
-}
-
-/* Decorative Elements */
 .islamic-border {
-  border-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M0 0h25l25 25-25 25H0zM50 0h25l25 25-25 25H50z' fill='%23f0f9f4' fill-opacity='0.4'/%3E%3C/svg%3E") 30;
   border-width: 4px;
   border-style: solid;
+  border-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M0 0h25l25 25-25 25H0zM50 0h25l25 25-25 25H50z' fill='%23f0f9f4' fill-opacity='0.4'/%3E%3C/svg%3E") 30;
 }
 
-/* Progress Bar Styles */
 .progress-ring {
-  transition: stroke-dashoffset 0.35s;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
+  transition: stroke-dashoffset 0.35s;
 }
 
-/* Card Styles */
 .card {
   @apply rounded-lg shadow-md transition-all duration-300;
-  background: var(--color-surface);
-  border: 1px solid rgba(var(--color-accent), 0.1);
+  background-color: var(--color-surface);
+  border: 1px solid rgba(46, 204, 113, 0.1);
 }
 
 .card:hover {
@@ -79,18 +56,16 @@ body {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-/* Animation Classes */
+.celebrate {
+  animation: celebrate 0.5s ease-in-out;
+}
+
 @keyframes celebrate {
   0% { transform: scale(1); }
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
 }
 
-.celebrate {
-  animation: celebrate 0.5s ease-in-out;
-}
-
-/* Accessibility Classes */
 .high-contrast {
   --color-text: #000000;
   --color-background: #FFFFFF;
@@ -101,4 +76,14 @@ body {
 .large-text {
   font-size: 120%;
   line-height: 1.6;
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

@@ -8,6 +8,7 @@ import Link from 'next/link'
 export default function SignUp() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [name, setName] = useState('')
   const [error, setError] = useState('')
   const { signUp } = useAuth()
   const router = useRouter()
@@ -15,7 +16,7 @@ export default function SignUp() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
-      await signUp(email, password)
+      await signUp(email, password, name)
       router.push('/setup')
     } catch (err) {
       setError('Failed to create an account')
@@ -32,6 +33,19 @@ export default function SignUp() {
           </div>
         )}
         <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2" htmlFor="name">
+              Name
+            </label>
+            <input
+              id="name"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="w-full p-2 border rounded-md"
+              required
+            />
+          </div>
           <div className="mb-4">
             <label className="block text-gray-700 mb-2" htmlFor="email">
               Email

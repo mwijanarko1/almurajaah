@@ -4,10 +4,10 @@ export default function HeroSection({ onGetStarted }: { onGetStarted: () => void
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-center px-4">
       <h1 className="text-6xl font-bold text-emerald-100 mb-4">
-        Welcome to Al Muraja'ah
+        Welcome to Al Muraja&apos;ah
       </h1>
       <p className="text-2xl text-emerald-200 mb-8 max-w-2xl">
-        "It is certainly We Who have revealed the Reminder, and it is certainly We Who will preserve it."
+        &ldquo;It is certainly We Who have revealed the Reminder, and it is certainly We Who will preserve it.&rdquo;
         <span className="block mt-2 text-lg text-emerald-300">(Quran 15:9)</span>
       </p>
       
