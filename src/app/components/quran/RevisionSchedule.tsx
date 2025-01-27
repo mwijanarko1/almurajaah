@@ -33,7 +33,12 @@ export default function RevisionSchedule() {
         setSettings(docSnap.data() as ScheduleSettings)
       } else {
         // Initialize with default settings
-        await setDoc(docRef, settings)
+        await setDoc(docRef, {
+          daysPerJuz: 7,
+          notificationsEnabled: true,
+          preferredTime: '09:00',
+          activeJuz: [],
+        })
       }
       setLoading(false)
     }
