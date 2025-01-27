@@ -1,15 +1,28 @@
-# Ansh & Riley Full-Stack Template
+# Quran Revision Tracker 📖✨
 
-This is a full-stack template project for Software Composers to create  applications with AI.
+A cross-platform mobile app to help users memorize and revise the Quran efficiently. Track progress, set goals, and stay motivated with gamified learning!
 
-## Getting started
-To create a new project, you go to `/paths`, choose from our list of Paths, and then use Cursor's Composer feature to quickly scaffold your project!
+![App Screenshot](screenshots/demo.png) <!-- Replace with your own screenshot -->
 
-You can also edit the Path's prompt template to be whatever you like!
+## Features 🌟
 
-## Technologies used
-This doesn't really matter, but is useful for the AI to understand more about this project. We are using the following technologies
-- React with Next.js 14 App Router
-- TailwindCSS
-- Firebase Auth, Storage, and Database
-- Multiple AI endpoints including OpenAI, Anthropic, and Replicate using Vercel's AI SDK
+- **Track Revisions**: Log daily progress by Juz, Surah, or verses.
+- **Spaced Repetition**: Smart reminders to review verses at optimal intervals.
+- **Progress Analytics**: Visualize memorization streaks, completion rates, and goals.
+- **Gamification**: Earn XP, unlock ranks (e.g., "Hafidh in Progress"), and collect badges.
+- **Quizzes**: Test retention with interactive quizzes (multiple-choice & fill-in-the-blank).
+- **Multi-Language Support**: Arabic and English interfaces.
+- **Cloud Sync**: Backup progress securely (Firebase integration).
+
+## Installation 🛠️
+
+### Prerequisites
+- Flutter SDK (v3.0+)
+- Android Studio/Xcode (for building)
+- Firebase account (for authentication and data storage)
+
+### Steps
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/[your-username]/quran-revision-tracker.git
+   cd quran-revision-tracker
